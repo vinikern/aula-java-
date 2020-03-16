@@ -1,0 +1,38 @@
+
+package aula_2_java;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mamatiolla
+ */
+public class Exercicio_4 {
+    
+    public static void main(String[] args) {
+        
+        int conta;
+        double tempo, total, prestacao, juros;
+        
+        Scanner ler = new Scanner (System.in);
+        
+        System.out.println("Digite o valor da sua prestação: R$ ");
+        prestacao = ler.nextFloat();
+        
+        System.out.println("Digite quantos dias a sua fatura está vencida: ");
+        tempo = ler.nextFloat();
+        
+        juros = prestacao * 0.02;
+        total = prestacao + (juros*tempo);
+        /*
+        Juros de 2% ao dia de atraso
+        */
+        
+        
+        
+        System.out.println("Total da taxa de juros: R$ " + juros);
+        System.out.println("Total da prestação: R$ "  + prestacao);
+        
+    }
+    
+}
