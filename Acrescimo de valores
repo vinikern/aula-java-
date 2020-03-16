@@ -1,0 +1,42 @@
+package aula_2_java;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mamatiolla
+ */
+public class Exercicio_3 {
+    
+    public static void main(String[] args) {
+        
+        String nome;
+        double precofabrica, revendedor, imposto, precofinal;
+        
+        Scanner ler = new Scanner (System.in);
+        
+        System.out.println("Digite o nome do automóvel: ");
+        nome = ler.nextLine();
+        
+        System.out.println("Digite o preço do automóvel na fabrica: ");
+        precofabrica = ler.nextDouble();
+        
+        revendedor = 0.45 * precofabrica;
+        imposto = precofabrica * 0.28;
+        precofinal = revendedor + imposto + precofabrica;
+        
+        /*
+        Imposto 28%
+        Porcentagem do revendedor 45%
+        
+        */
+        
+        System.out.println("Nome do automóvel é: " + nome );
+        System.out.println("Porcentagem do revendedor é: " + revendedor);
+        System.out.println("Total de impostos: " + imposto);
+        System.out.println("Preço de fabrica: R$ " + precofabrica );
+        System.out.println("Preço final do automóvel para o varejo é: R$ " + precofinal);
+        
+    }
+    
+}
