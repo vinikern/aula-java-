@@ -1,0 +1,33 @@
+
+package aula_2_java;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mamatiolla
+ */
+public class Exercicio_5 {
+    
+    public static void main(String[] args) {
+        double custo, venda, acrescimo, n1;
+        String nome;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Informe o nome do produto: ");
+        nome = ler.nextLine();
+        
+        System.out.print("Informe o valor de custo do produto: ");
+        custo = ler.nextDouble();
+        
+        System.out.print("Informe o percentual de acréscimo: ");
+        acrescimo = ler.nextDouble();
+        
+        n1 = (acrescimo/100) * custo;
+        venda = n1 + custo;
+     
+        System.out.println("O produto " + nome 
+                + " deve ser vendido por: " + venda);
+    }
+}
